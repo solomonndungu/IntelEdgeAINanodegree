@@ -14,7 +14,9 @@ The second folder (The Model Optimizer) talks of how you can convert a tensorflo
 https://docs.openvinotoolkit.org/2019_R3/_docs_MO_DG_prepare_model_convert_model_Convert_Model_From_TensorFlow.html
 
 The third folder deals with the Inference Engine, which runs the actual inference on a model. You first feed an IR to inference engine,then run code to perform inference requests.
+
 Documentation about using the IECore can be found here: https://docs.openvinotoolkit.org/2019_R3/classie__api_1_1IECore.html
+
 Docs about IENetwork: https://docs.openvinotoolkit.org/2019_R3/classie__api_1_1IENetwork.html
 Inference requests include synchronous requests (will wait and do nothing else until the inference response is returned, blocking the main thread) and asynchronous (when the response for a particular item takes a long time, you don't hold up the rest of your website or app from loading or operating appropriately. It means that other tasks may continue while waiting on the IE to respond)
 Then finally you integrate all of the above knowledge into a running app.
